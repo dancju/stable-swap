@@ -1,5 +1,5 @@
 //! Anchor-compatible SDK for the StableSwap program.
-#![deny(missing_docs)]
+// #![deny(missing_docs)]
 #![deny(rustdoc::all)]
 #![allow(rustdoc::missing_doc_code_examples)]
 #![allow(clippy::nonstandard_macro_braces)]
@@ -14,7 +14,7 @@ pub use state::*;
 
 use anchor_lang::prelude::*;
 
-declare_id!("SSwpkEEcbUqx4vtoEByFjSkhKdCT862DNVb52nZg1UZ");
+declare_id!("8h7HJug4hX3C6eQcda5darrsZ5g9RHUYoN7h1dKkA9Jf");
 
 /// The StableSwap program.
 #[derive(Clone)]

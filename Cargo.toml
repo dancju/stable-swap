@@ -11,8 +11,16 @@ members = [
 [profile.release]
 lto = "fat"
 codegen-units = 1
+overflow-checks = true
 
 [profile.release.build-override]
 opt-level = 3
 incremental = false
 codegen-units = 1
+
+# [workspace.dependencies]
+# stable-swap-anchor = { path = "stable-swap-anchor" }
+# stable-swap-client = { path = "stable-swap-client" }
+# stable-swap-math = { path = "stable-swap-math" }
+# stable-swap-math-sim = { path = "stable-swap-math/sim" }
+# stable-swap-program = { path = "stable-swap-program/program" }

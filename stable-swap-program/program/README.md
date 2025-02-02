@@ -10,7 +10,7 @@ Saber is the leading StableSwap exchange on [Solana](https://solana.com/https://
 
 ### Programs
 
-**Program ID:** [`SSwpkEEcbUqx4vtoEByFjSkhKdCT862DNVb52nZg1UZ`](https://explorer.solana.com/address/SSwpkEEcbUqx4vtoEByFjSkhKdCT862DNVb52nZg1UZ)
+**Program ID:** [`8h7HJug4hX3C6eQcda5darrsZ5g9RHUYoN7h1dKkA9Jf`](https://explorer.solana.com/address/8h7HJug4hX3C6eQcda5darrsZ5g9RHUYoN7h1dKkA9Jf)
 
 The program is deployed at the same address on `mainnet-beta`, `devnet`, and `testnet`.
 

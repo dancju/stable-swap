@@ -1,5 +1,5 @@
-anchor_version = "0.24.2"
-solana_version = "1.11.10"
+anchor_version = "0.29.0"
+solana_version = "1.18.26"
 
 [workspace]
 members = [
@@ -16,13 +16,13 @@ cluster = "localnet"
 wallet = "~/.config/solana/id.json"
 
 [programs.mainnet]
-stable_swap = "SSwpkEEcbUqx4vtoEByFjSkhKdCT862DNVb52nZg1UZ"
+stable_swap = { address = "8h7HJug4hX3C6eQcda5darrsZ5g9RHUYoN7h1dKkA9Jf", path = "stable-swap-program/program/src/lib.rs" }
 
 [programs.devnet]
-stable_swap = "SSwpkEEcbUqx4vtoEByFjSkhKdCT862DNVb52nZg1UZ"
+stable_swap = { address = "8h7HJug4hX3C6eQcda5darrsZ5g9RHUYoN7h1dKkA9Jf", path = "stable-swap-program/program/src/lib.rs" }
 
 [programs.testnet]
-stable_swap = "SSwpkEEcbUqx4vtoEByFjSkhKdCT862DNVb52nZg1UZ"
+stable_swap = { address = "8h7HJug4hX3C6eQcda5darrsZ5g9RHUYoN7h1dKkA9Jf", path = "stable-swap-program/program/src/lib.rs" }
 
 [programs.localnet]
-stable_swap = "SSwpkEEcbUqx4vtoEByFjSkhKdCT862DNVb52nZg1UZ"
+stable_swap = { address = "8h7HJug4hX3C6eQcda5darrsZ5g9RHUYoN7h1dKkA9Jf", path = "stable-swap-program/program/src/lib.rs" }

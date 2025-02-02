@@ -13,15 +13,16 @@ license = "Apache-2.0"
 program = []
 no-entrypoint = []
 fuzz = ["stable-swap-client/fuzz"]
+idl-build = []
 
 [dependencies]
-solana-program = "^1.6.10"
-spl-token = { version = "^3", features = ["no-entrypoint"] }
+solana-program = "1.18.26"
+spl-token = { version = "4", features = ["no-entrypoint"] }
 stable-swap-client = { path = "../../stable-swap-client", version = "^1" }
 stable-swap-math = { path = "../../stable-swap-math", version = "^1" }
 
 [dev-dependencies]
-solana-sdk = "^1.9.18"
+solana-sdk = "1.18.26"
 
 [lib]
 name = "stable_swap"

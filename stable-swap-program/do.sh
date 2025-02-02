@@ -20,7 +20,7 @@ perform_action() {
         (
             rm -rf scripts/tmp
             anchor build --program-name stable_swap
-            solana-test-validator --quiet --bpf-program SSwpkEEcbUqx4vtoEByFjSkhKdCT862DNVb52nZg1UZ ../target/deploy/stable_swap.so &
+            solana-test-validator -r --quiet --bpf-program 8h7HJug4hX3C6eQcda5darrsZ5g9RHUYoN7h1dKkA9Jf ../target/deploy/stable_swap.so &
             yarn --cwd sdk install
             yarn --cwd sdk test-int ${@:2}
         )

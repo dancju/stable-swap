@@ -6,7 +6,6 @@
 
 use borsh::{BorshDeserialize, BorshSerialize};
 use stable_swap_client::error::SwapError;
-use std::borrow::BorrowMut;
 use std::io::{Error, ErrorKind, Write};
 use std::mem::size_of;
 use uint::construct_uint;
@@ -75,11 +74,7 @@ impl U256 {
 
     /// Convert to little endian bytes
     pub fn to_le_bytes(self) -> [u8; 32] {
-        let mut buf: Vec<u8> = Vec::with_capacity(size_of::<Self>());
-        self.to_little_endian(buf.borrow_mut());
-
-        let mut bytes: [u8; 32] = [0u8; 32];
-        bytes.copy_from_slice(buf.as_slice());
+        let bytes: [u8; 32] = self.to_little_endian();
         bytes
     }
 }
@@ -120,11 +115,7 @@ impl U192 {
 
     /// Convert to little endian bytes
     pub fn to_le_bytes(self) -> [u8; 24] {
-        let mut buf: Vec<u8> = Vec::with_capacity(size_of::<Self>());
-        self.to_little_endian(buf.borrow_mut());
-
-        let mut bytes: [u8; 24] = [0u8; 24];
-        bytes.copy_from_slice(buf.as_slice());
+        let bytes: [u8; 24] = self.to_little_endian();
         bytes
     }
 }

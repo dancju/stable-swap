@@ -14,4 +14,4 @@ pub mod state;
 pub use solana_program;
 
 // The library uses this to verify the keys
-solana_program::declare_id!("SSwpkEEcbUqx4vtoEByFjSkhKdCT862DNVb52nZg1UZ");
+solana_program::declare_id!("8h7HJug4hX3C6eQcda5darrsZ5g9RHUYoN7h1dKkA9Jf");

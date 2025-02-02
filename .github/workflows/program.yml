@@ -8,8 +8,8 @@ on:
 
 env:
   CARGO_TERM_COLOR: always
-  SOLANA_VERSION: "1.11.10"
-  RUST_TOOLCHAIN: "1.59.0"
+  SOLANA_VERSION: "1.18.26"
+  RUST_TOOLCHAIN: "1.86.0"
 
 jobs:
   unit-tests:
